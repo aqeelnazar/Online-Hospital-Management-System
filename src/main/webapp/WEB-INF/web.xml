@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+		xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee 
+		http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
+		version = "3.1">
+		
+	<servlet>
+		<servlet-name>addDoctor</servlet-name>
+		<servlet-class>servlet.addDoctor</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+		<servlet-name>addDoctor</servlet-name>
+		<url-pattern>/adddoc</url-pattern>
+	</servlet-mapping>
+
+
+	<servlet>
+		<servlet-name>docLogin</servlet-name>
+		<servlet-class>servlet.docLogin</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+		<servlet-name>docLogin</servlet-name>
+		<url-pattern>/doclog</url-pattern>
+	</servlet-mapping>
+
+
+	<servlet>
+		<servlet-name>Admin</servlet-name>
+		<servlet-class>servlet.Admin</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+		<servlet-name>Admin</servlet-name>
+		<url-pattern>/admin</url-pattern>
+	</servlet-mapping>
+	
+	
+	
+<servlet>
+		<servlet-name>singleDataButton</servlet-name>
+		<servlet-class>servlet.singleDataButton</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+		<servlet-name>singleDataButton</servlet-name>
+		<url-pattern>/singlebutton</url-pattern>
+	</servlet-mapping>
+		
+	
+<servlet>
+		<servlet-name>updateDoctor</servlet-name>
+		<servlet-class>servlet.updateDoctor</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+		<servlet-name>updateDoctor</servlet-name>
+		<url-pattern>/updateDoc</url-pattern>
+	</servlet-mapping>
+	
+	
+	
+<servlet>
+		<servlet-name>deleteDoctor</servlet-name>
+		<servlet-class>servlet.deleteDoctor</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+		<servlet-name>deleteDoctor</servlet-name>
+		<url-pattern>/deleteDoc</url-pattern>
+	</servlet-mapping>
+	
+	
+	<servlet>
+		<servlet-name>addCustomer</servlet-name>
+		<servlet-class>servlet.addCustomer</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+		<servlet-name>addCustomer</servlet-name>
+		<url-pattern>/addcus</url-pattern>
+	</servlet-mapping>
+
+
+	<servlet>
+		<servlet-name>cuslogin</servlet-name>
+		<servlet-class>servlet.cuslogin</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+		<servlet-name>cuslogin</servlet-name>
+		<url-pattern>/cuslog</url-pattern>
+	</servlet-mapping>
+
+
+	<servlet>
+		<servlet-name>singleDataButtonData</servlet-name>
+		<servlet-class>servlet.singleDataButtonData</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+		<servlet-name>singleDataButtonData</servlet-name>
+		<url-pattern>/singlebuttondata</url-pattern>
+	</servlet-mapping>
+		
+	
+<servlet>
+		<servlet-name>updateCustomer</servlet-name>
+		<servlet-class>servlet.updateCustomer</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+		<servlet-name>updateCustomer</servlet-name>
+		<url-pattern>/updatecus</url-pattern>
+	</servlet-mapping>
+	
+	
+	
+<servlet>
+		<servlet-name>deleteCustomer</servlet-name>
+		<servlet-class>servlet.deleteCustomer</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+		<servlet-name>deleteCustomer</servlet-name>
+		<url-pattern>/deleteCcs</url-pattern>
+	</servlet-mapping>
+	
+		
+	
+	
+<servlet>
+		<servlet-name>SelectDoctor</servlet-name>
+		<servlet-class>servlet.selectDoctorServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>SelectDoctor</servlet-name>
+		<url-pattern>/selectDoctor</url-pattern>
+	</servlet-mapping>
+	
+	
+	<!-- insert -->
+	 <servlet>
+    	<servlet-name>AppointmentInsert</servlet-name>
+    	<servlet-class>servlet.AppointmentInsert</servlet-class>
+    </servlet>
+    <servlet-mapping>
+    	<servlet-name>AppointmentInsert</servlet-name>
+    	<url-pattern>/insert</url-pattern>
+    </servlet-mapping>
+    
+    <!-- readAppointment -->
+    <servlet>
+		<servlet-name>readAppointmentServlet</servlet-name>
+		<servlet-class>servlet.readAppointmentServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>readAppointmentServlet</servlet-name>
+		<url-pattern>/read</url-pattern>
+	</servlet-mapping>
+	
+    
+    <!-- update -->
+	 <servlet>
+    	<servlet-name>UpdateAppointmentServlet</servlet-name>
+    	<servlet-class>servlet.UpdateAppointmentServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+    	<servlet-name>UpdateAppointmentServlet</servlet-name>
+    	<url-pattern>/update</url-pattern>
+    </servlet-mapping>
+    
+       <!-- delete -->
+	 <servlet>
+    	<servlet-name>DeleteAppointmentServlet</servlet-name>
+    	<servlet-class>servlet.DeleteAppointmentServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+    	<servlet-name>DeleteAppointmentServlet</servlet-name>
+    	<url-pattern>/delete</url-pattern>
+    </servlet-mapping>
+	
+	<!-- Supplier connection -->
+	<servlet>
+		<servlet-name>SupplierServlet</servlet-name>
+		<servlet-class>net.javaguides.web.SupplierServlet</servlet-class>
+	</servlet>
+
+<!-- Servlet mappings for supplier -->
+	<servlet-mapping>
+		<servlet-name>SupplierServlet</servlet-name>
+		<url-pattern>/newSupplier</url-pattern> <!-- This maps the servlet to the URL pattern /hello -->
+	</servlet-mapping>
+
+	<servlet-mapping>
+		<servlet-name>SupplierServlet</servlet-name>
+		<url-pattern>/insertSupplier</url-pattern> <!-- This maps the servlet to the URL pattern /hello -->
+	</servlet-mapping>
+
+	<servlet-mapping>
+		<servlet-name>SupplierServlet</servlet-name>
+		<url-pattern>/deleteSupplier</url-pattern> <!-- This maps the servlet to the URL pattern /hello -->
+	</servlet-mapping>
+
+	<servlet-mapping>
+		<servlet-name>SupplierServlet</servlet-name>
+		<url-pattern>/editSupplier</url-pattern> <!-- This maps the servlet to the URL pattern /hello -->
+	</servlet-mapping>
+
+	<servlet-mapping>
+		<servlet-name>SupplierServlet</servlet-name>
+		<url-pattern>/updateSupplier</url-pattern> <!-- This maps the servlet to the URL pattern /hello -->
+	</servlet-mapping>
+
+	<servlet-mapping>
+		<servlet-name>SupplierServlet</servlet-name>
+		<url-pattern>/supplier-list</url-pattern> <!-- This maps the servlet to the URL pattern /hello -->
+	</servlet-mapping>
+
+	
+	
+	
+			
+	
+		
+</web-app>
