@@ -7,7 +7,6 @@ public class customer {
     private String email;
     private String password;
 
-
     // Getters and setters
 	public String getName() {
 		return name;
